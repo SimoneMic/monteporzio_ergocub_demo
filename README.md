@@ -114,4 +114,5 @@ On the laptop, type in a terminal:
    ```
 
 **10. Start the ergoCubEmotions on the robot HEAD:**
-On the yarpmanager, start the ergoCubEmotions in
+On the yarpmanager, start `ergoCubEmotions` module in Entities -> Applications -> ergoCubEmotions
+
