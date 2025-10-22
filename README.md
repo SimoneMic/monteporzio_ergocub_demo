@@ -89,3 +89,29 @@ Once the robot is completely staying still, run on a terminal:
    yarp rpc /wholeBodyDynamics/rpc
    >> calib all 300
    ```
+
+**6. Launch the `WalkingModule` on the *ROBOT TORSO*:**
+   ```
+   WalkingModule
+   ```
+
+**7. Prepare the robot for walking:**
+On any terminal run:
+   ```
+   yarp rpc /walking-coordinator/rpc
+   >> prepareRobot
+   ```
+   
+> [!IMPORTANT]  
+> When the robot has finished preparing successfully, lower it to the ground from the crane.
+
+**8. Then run the rpc command (on the terminal of the previous step):** `startWalking`
+
+**9. Start the Joypad Module on the LAPTOP:**
+On the laptop, type in a terminal:
+   ```
+   WalkingJoypadModule --from keyboard.ini
+   ```
+
+**10. Start the ergoCubEmotions on the robot HEAD:**
+On the yarpmanager, start the ergoCubEmotions in
