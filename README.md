@@ -81,7 +81,8 @@ OR, On the laptop run:
 ```
 yarpmotorgui --from custom_positions.ini
 ```
-And home all the parts into `TwoFeetStanding` position.
+
+And home all the parts into `TwoFeetStanding` position from: `Global Joints Commands` -> `Custom Positions` -> `Move all parts to TwoFeetStanding`.
 
 **5. Calibrate the FT sensors:**
 Once the robot is completely staying still, run on a terminal:
@@ -115,9 +116,9 @@ On the laptop, type in a terminal:
 
 **10. Start the ergoCubEmotions on the robot HEAD:**
 On the yarpmanager, start `ergoCubEmotions` module in Entities -> Applications -> ergoCubEmotions
-To set any emotion, like happy face, on a terminal run:
+To set any emotion, like happy face, on any terminal run:
    ```
    yarp rpc /ergoCubEmotions/rpc
-   >> setEmotions happy
+   >> setEmotion happy
    ```
 
