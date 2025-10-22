@@ -76,8 +76,8 @@ On the TORSO run:
    ```
 
 **4. Launch the yarpmotorgui:**
-
-On the laptop run:
+In the yarpmanager launch the yarpmotorgui from Entities -> Applications -> 1-ami-ergoCubStartup
+OR, On the laptop run:
 ```
 yarpmotorgui --from custom_positions.ini
 ```
@@ -115,8 +115,9 @@ On the laptop, type in a terminal:
 
 **10. Start the ergoCubEmotions on the robot HEAD:**
 On the yarpmanager, start `ergoCubEmotions` module in Entities -> Applications -> ergoCubEmotions
-To set any emotion, on a terminal run:
+To set any emotion, like happy face, on a terminal run:
    ```
-   yarp rpc 
+   yarp rpc /ergoCubEmotions/rpc
+   >> setEmotions happy
    ```
 
